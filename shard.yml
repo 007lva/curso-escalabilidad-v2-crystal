@@ -10,4 +10,8 @@ targets:
 
 crystal: 0.35.1
 
+dependencies:
+  redis:
+    github: stefanwille/crystal-redis
+
 license: MIT
