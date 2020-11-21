@@ -13,3 +13,5 @@ end
 
 address = server.bind_tcp port
 server.listen
+
+redis = Redis.new(host: hostname, port: port)
