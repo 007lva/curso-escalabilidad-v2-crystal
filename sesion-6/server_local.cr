@@ -17,11 +17,11 @@ server = HTTP::Server.new do |context|
     next
   end
 
-  id = get_result(paths[2])
+  result = get_result(paths[2])
 
   response.content_type = "application/json"
   response.status_code = 200
-  response.print id
+  response.print result
 end
 
 address = server.bind_tcp port
