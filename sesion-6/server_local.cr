@@ -24,7 +24,7 @@ server = HTTP::Server.new do |context|
   response.print result
 end
 
-address = server.bind_tcp port
+address = server.bind_tcp hostname, port
 server.listen
 
 def get_result(id)
