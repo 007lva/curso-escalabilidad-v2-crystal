@@ -28,8 +28,6 @@ address = server.bind_tcp port
 server.listen
 
 def get_result(id)
-  puts "id: #{id}"
   redis = Redis.new(host: REDIS_HOST, port: REDIS_PORT)
-  result = redis.incr(id)
-  "#{result}"
+  redis.incr(id)
 end
