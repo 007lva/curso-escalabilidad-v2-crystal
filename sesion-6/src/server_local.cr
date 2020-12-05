@@ -3,8 +3,8 @@ require "http/server"
 
 hostname = "0.0.0.0"
 port = 7017
-REDIS_HOST = "service.pinchito.es"
-REDIS_PORT = 7079
+REDIS_HOST = "localhost"
+REDIS_PORT = 6379
 
 server = HTTP::Server.new do |context|
   request = context.request
